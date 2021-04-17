@@ -1,0 +1,131 @@
+.header {
+  border-bottom: 1px solid $border;
+
+  @media (max-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 66px 1fr;
+  max-width: 1230px;
+  min-height: 66px;
+  padding: 30px 15px;
+  padding-bottom: 14px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.header__container {
+  width: 235px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  justify-self: flex-end;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.header__login,
+.header__cart {
+  padding: 13px 18px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $black;
+  display: block;
+  height: min-content;
+}
+
+.header__login {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__cart-text {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__cart {
+  @media (max-width: $tablet-width) {
+    margin-right: 11px;
+    margin-top: -4px;
+  }
+}
+
+.header__cart-num {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__search {
+  margin-top: 4px;
+  position: relative;
+  padding-left: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icon/search.svg");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  & input {
+    margin-left: 27px;
+    border: none;
+    width: 192px;
+    height: 35px;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: $placeholder;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__logo {
+  grid-column: 2/3;
+}
+
+.header__cart-svg {
+  display: none;
+  fill: transparent;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.header__btn-nav {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    margin: 32px 30px;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $black;
+    border: none;
+    box-shadow: 0 8px 0 0 $black, 0 -8px 0 0 $black;
+  }
+}
