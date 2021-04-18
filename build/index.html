@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Описание">
+  <meta name="description" content="description">
   <title>Jewellery</title>
-  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font">
-  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
-  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
     <div class="header__wrapper wrapper">
-      <button class="header__btn-nav"></button>
-      <!-- <div class="header__nav">
-
-      </div> -->
+      <button class="header__btn-nav">
+        <span class="visually-hidden">Кнопка открытия или закрытия меню</span>
+      </button>
       <form class="header__search" action="#">
         <input type="text" placeholder="Type here to search">
       </form>
       <a class="header__logo">
-        <svg width="66" height="66" viewBox="0 0 66 66">
+        <svg class="header__logo-svg" width="66" height="66" viewBox="0 0 66 66">
           <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+        <svg class="header__logo-svg-white" width="66" height="66" viewBox="0 0 66 66">
+          <use xlink:href="img/sprite.svg#logo-white"></use>
         </svg>
       </a>
       <div class="header__container">
@@ -35,18 +39,97 @@
           <svg class="header__cart-svg" width="20" height="18" viewBox="0 0 20 18">
             <use xlink:href="img/sprite.svg#cart"></use>
           </svg>
+          <svg class="header__cart-svg-white" width="20" height="18" viewBox="0 0 20 18">
+            <use xlink:href="img/sprite.svg#cart-white"></use>
+          </svg>
         </a>
+      </div>
+      <div class="header__nav">
+        <form class="header__nav-search" action="#">
+          <input type="text">
+        </form>
+        <div class="header__nav-items">
+          <a class="header__nav-item" href="#">What’s new</a>
+          <a class="header__nav-item" href="#">Chokers</a>
+          <a class="header__nav-item" href="#">Necklaces</a>
+          <a class="header__nav-item" href="#">Rings</a>
+          <a class="header__nav-item" href="#">Earrings</a>
+        </div>
+        <div class="header__nav-info">
+          <a href="#">About CH</a>
+          <a href="#">Stores & Hours</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <a class="header__nav-login" href="#">Login</a>
       </div>
     </div>
   </header>
-  <nav class="nav">
-    <div class="nav__wrapper wrapper">
-      <a class="nav__item" href="#">What’s new</a>
-      <a class="nav__item" href="#">Chokers</a>
-      <a class="nav__item" href="#">Necklaces</a>
-      <a class="nav__item" href="#">Rings</a>
-      <a class="nav__item" href="#">Earrings</a>
+  <main class="main">
+    <nav class="nav">
+      <div class="nav__wrapper wrapper">
+        <a class="nav__item" href="#">What’s new</a>
+        <a class="nav__item" href="#">Chokers</a>
+        <a class="nav__item" href="#">Necklaces</a>
+        <a class="nav__item" href="#">Rings</a>
+        <a class="nav__item" href="#">Earrings</a>
+      </div>
+    </nav>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <form class="footer__form" action="#">
+        <h2>The good stuff in your inbox</h2>
+        <p>News and updates from CH. No spam, we promise.</p>
+        <div class="footer__input-email">
+          <input type="email" name="email" id="email" placeholder="Your E-mail">
+          <a href="#">
+            Sign Up
+            <svg class="footer__svg-arrow" width="30" height="11" viewBox="0 0 30 11">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </form>
+      <ul class="footer__list">
+        <li><a href="#">Ordering & Payment</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Returns & Exchanges</a></li>
+        <li><a href="#">Delivery</a></li>
+      </ul>
+      <ul class="footer__list footer__list-two">
+        <li><a href="#">About CH</a></li>
+        <li><a href="#">Stores & Hours</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="footer__list footer__list-social">
+        <li><a href="#">
+          <svg class="footer__svg" width="15" height="15" viewBox="0 0 8 15">
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg>
+          <span>Facebook</span>
+        </a></li>
+        <li><a href="#">
+          <svg class="footer__svg" width="15" height="15" viewBox="0 0 15 15">
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg>
+          <span>Instagram</span>
+        </a></li>
+        <li><a href="#">
+          <svg class="footer__svg" width="15" height="15" viewBox="0 0 16 15">
+            <use xlink:href="img/sprite.svg#pinterest"></use>
+          </svg>
+          <span>Pinterest</span>
+        </a></li>
+        <li><a href="#">
+          <svg class="footer__svg" width="15" height="15" viewBox="0 0 15 13">
+            <use xlink:href="img/sprite.svg#twitter"></use>
+          </svg>
+          <span>Twitter</span>
+        </a></li>
+      </ul>
     </div>
-  </nav>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
