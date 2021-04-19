@@ -1,0 +1,49 @@
+.perfection {
+  background-color: $semi-brown;
+  background-image: url("../img/intro-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 463px;
+  width: 100%;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & h2 {
+    font-family: "CormorantGaramond", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    margin: 0;
+  }
+
+  & p {
+    font-family: "CormorantGaramond", "Arial", sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 117%;
+    margin: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+
+    & h2 {
+      font-size: 38px;
+    }
+
+    & p {
+      font-size: 34px;
+    }
+  }
+}
