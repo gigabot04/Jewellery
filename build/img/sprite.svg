@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-swiper" viewBox="0 0 30 11">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow-btn" viewBox="0 0 17 10">
+<path d="M1 1L8.5 9L16 1" stroke="#A87B62"/>
+</symbol><symbol id="arrow-swiper" viewBox="0 0 30 11">
 <path d="M0 5.5H29M29 5.5L23.5135 1M29 5.5L23.5135 10" stroke="#A87B62"/>
 </symbol><symbol id="arrow" viewBox="0 0 30 11">
 <path d="M0 5.5H29M29 5.5L23.5135 1M29 5.5L23.5135 10" stroke="white"/>
