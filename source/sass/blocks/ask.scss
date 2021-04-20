@@ -6,10 +6,12 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 41px;
+    padding: 0 45px;
   }
 
   @media (max-width: $mobile-width) {
     margin-top: 31px;
+    padding: 0 15px;
   }
 }
 
@@ -33,7 +35,6 @@
   border: none;
   background-color: transparent;
   border: 1px solid $brown;
-  border-bottom: none;
   padding: 43px 42px;
   max-width: 970px;
   width: 100%;
@@ -43,6 +44,11 @@
   text-align: start;
   color: $black;
   position: relative;
+  border-bottom: none;
+
+  &:last-child {
+    border-bottom: 1px solid $brown;
+  }
 
   &::after {
     content: "";
@@ -78,7 +84,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    max-width: 678px;
+    max-width: 100%;
     padding: 44px 49px;
 
     & span {
@@ -94,8 +100,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 290px;
     padding: 17px 24px;
+    padding-bottom: 22px;
     padding-right: 53px;
     font-size: 16px;
 
