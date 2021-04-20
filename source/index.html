@@ -12,12 +12,12 @@
   <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font">
   <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
   <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__wrapper wrapper">
+    <div class="header__wrapper wrapper header__no-js">
       <button class="header__btn-nav">
         <span class="visually-hidden">Кнопка открытия или закрытия меню</span>
       </button>
@@ -79,94 +79,130 @@
       <h2>PERFECTION</h2>
       <p>made to be yours</p>
     </section>
-    <section class="shop">
+    <section class="shop shop__no-js">
       <div class="shop__container swiper-container">
         <h2 class="shop__head">New In</h2>
         <a href="#" class="shop__btn">Shop Now</a>
-        <div class="shop__wrapper swiper-wrapper">
+        <div class=" shop__wrapper swiper-wrapper">
           <div class="shop__slide swiper-slide">
             <div class="shop__img">
-              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with amethyst">
+              <picture>
+                <source srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
+              </picture>
             </div>
             <p class="shop__prod-text">Necklace with amethyst</p>
             <p class="shop__prod-price">$ 145</p>
           </div>
           <div class="shop__slide swiper-slide">
             <div class="shop__img">
-              <img src="img/layered-choker-necklace-desktop.jpg" alt="Necklace with amethyst">
+              <picture>
+                <source srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Layered choker">
+              </picture>
             </div>
             <p class="shop__prod-text">Layered choker</p>
             <p class="shop__prod-price">$ 115</p>
           </div>
           <div class="shop__slide swiper-slide">
             <div class="shop__img">
-              <img src="img/dainty-gold-necklace-desktop.jpg" alt="Necklace with amethyst">
+              <picture>
+                <source srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/dainty-gold-necklace-desktop.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt=">Gold chain">
+              </picture>
             </div>
             <p class="shop__prod-text">Gold chain</p>
             <p class="shop__prod-price">$ 215</p>
           </div>
           <div class="shop__slide swiper-slide">
             <div class="shop__img">
-              <img src="img/galaxy-earrings-desktop.jpg" alt="Necklace with amethyst">
+              <picture>
+                <source srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
+              </picture>
             </div>
             <p class="shop__prod-text">Galaxy earrings</p>
             <p class="shop__prod-price">$ 95</p>
           </div>
           <div class="shop__slide swiper-slide">
             <div class="shop__img">
-              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with amethyst">
+              <picture>
+                <source srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
+              </picture>
             </div>
-            <p class="shop__prod-text">Necklace with amethyst1</p>
+            <p class="shop__prod-text">Necklace with amethyst</p>
             <p class="shop__prod-price">$ 145</p>
           </div>
           <div class="shop__slide swiper-slide">
             <div class="shop__img">
-              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with amethyst">
+              <picture>
+                <source srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Layered choker">
+              </picture>
             </div>
-            <p class="shop__prod-text">Necklace with amethyst2</p>
+            <p class="shop__prod-text">Layered choker</p>
+            <p class="shop__prod-price">$ 115</p>
+          </div>
+          <div class="shop__slide swiper-slide">
+            <div class="shop__img">
+              <picture>
+                <source srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/dainty-gold-necklace-desktop.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt=">Gold chain">
+              </picture>
+            </div>
+            <p class="shop__prod-text">Gold chain</p>
+            <p class="shop__prod-price">$ 215</p>
+          </div>
+          <div class="shop__slide swiper-slide">
+            <div class="shop__img">
+              <picture>
+                <source srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
+              </picture>
+            </div>
+            <p class="shop__prod-text">Galaxy earrings</p>
+            <p class="shop__prod-price">$ 95</p>
+          </div>
+          <div class="shop__slide swiper-slide">
+            <div class="shop__img">
+              <picture>
+                <source srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
+              </picture>
+            </div>
+            <p class="shop__prod-text">Necklace with amethyst</p>
             <p class="shop__prod-price">$ 145</p>
           </div>
           <div class="shop__slide swiper-slide">
             <div class="shop__img">
-              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with amethyst">
+              <picture>
+                <source srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Layered choker">
+              </picture>
             </div>
-            <p class="shop__prod-text">Necklace with amethyst3</p>
-            <p class="shop__prod-price">$ 145</p>
+            <p class="shop__prod-text">Layered choker</p>
+            <p class="shop__prod-price">$ 115</p>
           </div>
           <div class="shop__slide swiper-slide">
             <div class="shop__img">
-              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with amethyst">
+              <picture>
+                <source srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/dainty-gold-necklace-desktop.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt=">Gold chain">
+              </picture>
             </div>
-            <p class="shop__prod-text">Necklace with amethyst4</p>
-            <p class="shop__prod-price">$ 145</p>
+            <p class="shop__prod-text">Gold chain</p>
+            <p class="shop__prod-price">$ 215</p>
           </div>
           <div class="shop__slide swiper-slide">
             <div class="shop__img">
-              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with amethyst">
+              <picture>
+                <source srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x" type="image/webp">
+                <img src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
+              </picture>
             </div>
-            <p class="shop__prod-text">Necklace with amethyst4</p>
-            <p class="shop__prod-price">$ 145</p>
-          </div>
-          <div class="shop__slide swiper-slide">
-            <div class="shop__img">
-              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with amethyst">
-            </div>
-            <p class="shop__prod-text">Necklace with amethyst4</p>
-            <p class="shop__prod-price">$ 145</p>
-          </div>
-          <div class="shop__slide swiper-slide">
-            <div class="shop__img">
-              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with amethyst">
-            </div>
-            <p class="shop__prod-text">Necklace with amethyst4</p>
-            <p class="shop__prod-price">$ 145</p>
-          </div>
-          <div class="shop__slide swiper-slide">
-            <div class="shop__img">
-              <img src="img/purple-gemstone-necklace-desktop.jpg" alt="Necklace with amethyst">
-            </div>
-            <p class="shop__prod-text">Necklace with amethyst4</p>
-            <p class="shop__prod-price">$ 145</p>
+            <p class="shop__prod-text">Galaxy earrings</p>
+            <p class="shop__prod-price">$ 95</p>
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -180,7 +216,10 @@
       <div class="blog__wrapper wrapper">
         <div class="blog__article">
           <div class="blog__img">
-            <img src="./img/jess-harper-desktop.jpg" alt="jess harper sunday">
+            <picture>
+              <source srcset="img/jess-harper-desktop.webp 1x, img/jess-harper-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/jess-harper-desktop.jpg" srcset="img/jess-harper-desktop@2x.jpg 2x" width="285" height="300" alt="jess harper sunday">
+            </picture>
           </div>
           <div class="blog__article-info">
             <p class="blog__date">September 30, 2019</p>
@@ -190,7 +229,10 @@
         </div>
         <div class="blog__article">
           <div class="blog__img">
-            <img src="./img/alve-odonnell-desktop.jpg" alt="alve-odonnell">
+            <picture>
+              <source srcset="img/alve-odonnell-desktop.webp 1x, img/alve-odonnell-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/alve-odonnell-desktop.jpg" srcset="img/alve-odonnell-desktop@2x.jpg 2x" width="570" height="630" alt="alve-odonnell">
+            </picture>
           </div>
           <div class="blog__article-info">
             <p class="blog__date">September 16, 2019</p>
@@ -200,7 +242,10 @@
         </div>
         <div class="blog__article">
           <div class="blog__img">
-            <img src="./img/alex-holyoake-desktop.jpg" alt="alex-holyoake">
+            <picture>
+              <source srcset="img/alex-holyoake-desktop.webp 1x, img/alex-holyoake-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/alex-holyoake-desktop.jpg" srcset="img/alex-holyoake-desktop@2x.jpg 2x" width="570" height="630" alt="alex-holyoake">
+            </picture>
           </div>
           <div class="blog__article-info">
             <p class="blog__date">September 23, 2019</p>
@@ -216,15 +261,15 @@
         What materials are the jewellery made of?
         <span>Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious and semiprecious stones and crystals.</span>
       </button>
-      <button class="ask__btn">
+      <button class="ask__btn ask__btn--active">
         Which countries do you deliver to?
         <span>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</span>
       </button>
-      <button class="ask__btn">
+      <button class="ask__btn ask__btn--active">
         What are the payment methods?
         <span>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</span>
       </button>
-      <button class="ask__btn">
+      <button class="ask__btn ask__btn--active">
         Can I return the jewellery if it didn’t fit me?
         <span>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</span>
       </button>
@@ -234,27 +279,47 @@
       <p class="gallery__btn">Follow Us</p>
       <div class="gallery__wrapper">
         <div class="gallery__img">
-          <img src="img/2-inst-desktop.jpg" alt="Photo from instagram">
+            <picture>
+              <source srcset="img/2-inst-desktop.webp 1x, img/2-inst-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/2-inst-desktop.jpg" srcset="img/2-inst-desktop@2x.jpg 2x" width="230" height="230" alt="Photo from instagram">
+            </picture>
         </div>
         <div class="gallery__img">
-          <img src="img/3-inst-desktop.jpg" alt="Photo from instagram">
+            <picture>
+              <source srcset="img/3-inst-desktop.webp 1x, img/3-inst-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/3-inst-desktop.jpg" srcset="img/3-inst-desktop@2x.jpg 2x" width="399" height="412" alt="Photo from instagram">
+            </picture>
         </div>
         <div class="gallery__img">
-          <img src="img/4-inst-desktop.jpg" alt="Photo from instagram">
+            <picture>
+              <source srcset="img/4-inst-desktop.webp 1x, img/4-inst-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/4-inst-desktop.jpg" srcset="img/4-inst-desktop@2x.jpg 2x" width="230" height="230" alt="Photo from instagram">
+            </picture>
         </div>
+        <div class="gallery__img">
+            <picture>
+              <source srcset="img/6-inst-desktop.webp 1x, img/6-inst-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/6-inst-desktop.jpg" srcset="img/6-inst-desktop@2x.jpg 2x" width="230" height="230" alt="Photo from instagram">
+            </picture>
+        </div>
+        <div class="gallery__img">
+            <picture>
+              <source srcset="img/1-inst-1-desktop.webp 1x, img/1-inst-1-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/1-inst-1-desktop.jpg" srcset="img/1-inst-1-desktop@2x.jpg 2x" width="230" height="230" alt="Photo from instagram">
+            </picture>
 
-        <div class="gallery__img">
-          <img src="img/6-inst-desktop.jpg" alt="Photo from instagram">
         </div>
         <div class="gallery__img">
-          <img src="img/1-inst-1-desktop.jpg" alt="Photo from instagram">
+            <picture>
+              <source srcset="img/5-inst-desktop.webp 1x, img/5-inst-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/5-inst-desktop.jpg" srcset="img/5-inst-desktop@2x.jpg 2x" width="230" height="150" alt="Photo from instagram">
+            </picture>
         </div>
         <div class="gallery__img">
-          <img src="img/5-inst-desktop.jpg" alt="Photo from instagram">
-        </div>
-
-        <div class="gallery__img">
-          <img src="img/7-inst-desktop.jpg" alt="Photo from instagram">
+            <picture>
+              <source srcset="img/7-inst-desktop.webp 1x, img/7-inst-desktop@2x.webp 2x" type="image/webp">
+              <img src="img/7-inst-desktop.jpg" srcset="img/7-inst-desktop@2x.jpg 2x" width="230" height="150" alt="Photo from instagram">
+            </picture>
         </div>
       </div>
     </section>

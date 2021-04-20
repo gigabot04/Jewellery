@@ -12,6 +12,10 @@
   align-items: center;
   flex-direction: column;
 
+  @media (max-resolution: 2dppx) {
+    background-image: url("../img/intro-desktop@2x.jpg");
+  }
+
   & h2 {
     font-family: "CormorantGaramond", "Arial", sans-serif;
     font-style: normal;

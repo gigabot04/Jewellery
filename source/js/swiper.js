@@ -1,5 +1,6 @@
 'use strict';
 {
+  document.querySelector(`.shop__no-js`).classList.remove(`shop__no-js`);
   // import Swiper from 'swiper/bundle';
   new Swiper(`.shop__container`, {
     navigation: {

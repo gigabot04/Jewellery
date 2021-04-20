@@ -63,6 +63,9 @@ a {
 html {
   height: 100%; }
 
+.body__js {
+  overflow: hidden; }
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,6 +421,19 @@ template {
     .header__wrapper {
       padding: 20px 0 0 0; } }
 
+.header__no-js .header__btn-nav {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.header__no-js .header__nav {
+  display: block; }
+
 .header__container {
   width: 235px;
   display: -webkit-box;
@@ -465,7 +481,7 @@ template {
     margin-right: 26px;
     margin-top: -1px; } }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .header__cart {
     margin-right: 1px;
     margin-top: -1px; } }
@@ -570,7 +586,14 @@ template {
   background-color: #A87B62;
   padding-bottom: 20px; }
   .header__nav--active {
-    display: block; }
+    display: block;
+    position: fixed;
+    top: 110px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    overflow-y: scroll; }
 
 @media (max-width: 1023px) {
   .header__logo-svg,
@@ -890,6 +913,9 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media (-webkit-max-device-pixel-ratio: 2), (max-resolution: 2dppx) {
+    .perfection {
+      background-image: url("../img/intro-desktop@2x.jpg"); } }
   .perfection h2 {
     font-family: "CormorantGaramond", "Arial", sans-serif;
     font-style: normal;
@@ -930,6 +956,9 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 33px; }
+
+.shop__no-js {
+  display: none; }
 
 .shop__head {
   font-family: "CormorantGaramond", "Arial", sans-serif;

@@ -42,6 +42,8 @@
   const cartWhiteHeader = document.querySelector(`.header__cart-svg-white`);
   const cartHeader = document.querySelector(`.header__cart-svg`);
   const navheader = document.querySelector(`.header__nav`);
+  const body = document.querySelector(`body`);
+  document.querySelector(`.header__no-js`).classList.remove(`header__no-js`);
 
   openMenuHeader.addEventListener(`click`, () => {
     headerWrap.classList.toggle(`header__wrapper--active`);
@@ -50,16 +52,23 @@
     cartWhiteHeader.classList.toggle(`header__cart-svg-white--active`);
     cartHeader.classList.toggle(`header__cart-svg--disable`);
     navheader.classList.toggle(`header__nav--active`);
+    body.classList.toggle(`body__js`);
   });
 }
 
 'use strict';
 {
   const ask = document.querySelector(`.ask`);
+  const questions = document.querySelectorAll(`.ask__btn--active`);
+  for (const question of questions) {
+    question.classList.remove(`ask__btn--active`);
+  }
   ask.addEventListener(`click`, (evt) => {
     let target = evt.target;
+    for (const question of document.querySelectorAll(`.ask__btn--active`)) {
+      question.classList.remove(`ask__btn--active`);
+    }
     if (target.classList.contains(`ask__btn`)) {
-      document.querySelector(`.ask__btn--active`).classList.remove(`ask__btn--active`);
       target.classList.add(`ask__btn--active`);
     }
   })
@@ -67,6 +76,7 @@
 
 'use strict';
 {
+  document.querySelector(`.shop__no-js`).classList.remove(`shop__no-js`);
   // import Swiper from 'swiper/bundle';
   new Swiper(`.shop__container`, {
     navigation: {
