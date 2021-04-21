@@ -214,6 +214,12 @@
     z-index: 3;
     overflow-y: scroll;
   }
+
+  @media (max-width: $mobile-width) {
+    &--active {
+      top: 72px;
+    }
+  }
 }
 
 .header__logo-svg,
@@ -252,6 +258,15 @@
     background-image: url("../img/icon/search-white.svg");
     background-repeat: no-repeat;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 30px;
+    padding: 0 15px;
+
+    &::after {
+      left: 27px;
+    }
+  }
 }
 
 .header__nav-search input {
@@ -268,6 +283,10 @@
   flex-direction: column;
   margin: 36px 45px;
   margin-bottom: 18px;
+
+  @media (max-width: $mobile-width) {
+    margin: 28px 15px 12px;
+  }
 }
 
 .header__nav-item {
@@ -291,6 +310,10 @@
     color: rgba($white, 0.75);
     padding: 10px 0;
   }
+
+  @media (max-width: $mobile-width) {
+    margin: 12px 15px 25px;
+  }
 }
 
 .header__nav-login {
@@ -299,4 +322,8 @@
   line-height: 130%;
   color: $white;
   margin: 45px;
+
+  @media (max-width: $mobile-width) {
+    margin: 16px;
+  }
 }

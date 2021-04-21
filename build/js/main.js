@@ -1,3 +1,29 @@
+'use strict';
+{
+  if (document.querySelector(`.filter`)) {
+    const filterItems = document.querySelectorAll(`.filter__item`);
+    for (const filterItem of filterItems) {
+      filterItem.addEventListener(`click`, (evt) => {
+        if (evt.target.classList.contains(`filter__btn`)) {
+          filterItem.classList.toggle(`filter__item--active`);
+        }
+      })
+    }
+    const filter = document.querySelector(`.filter`);
+    const openFilterBtn = document.querySelector(`.main__btn-filter`);
+    const body = document.querySelector(`body`);
+    const closeFilterBtn = document.querySelector(`.main__close-filter`);
+    const openCloseFilter = (evt) => {
+      evt.preventDefault();
+      filter.classList.toggle(`filter--active`);
+      body.classList.toggle(`body__js`);
+      closeFilterBtn.classList.toggle(`main__close-filter--active`)
+    }
+    closeFilterBtn.addEventListener(`click`, openCloseFilter);
+    openFilterBtn.addEventListener('click', openCloseFilter);
+  }
+}
+
 // "use strict";
 // {
 //   const form = document.querySelector(`.popup-call__form--js`);
@@ -58,73 +84,78 @@
 
 'use strict';
 {
-  const ask = document.querySelector(`.ask`);
-  const questions = document.querySelectorAll(`.ask__btn--active`);
-  for (const question of questions) {
-    question.classList.remove(`ask__btn--active`);
-  }
-  ask.addEventListener(`click`, (evt) => {
-    let target = evt.target;
-    for (const question of document.querySelectorAll(`.ask__btn--active`)) {
+  if (document.querySelector(`.ask`)) {
+    const ask = document.querySelector(`.ask`);
+    const questions = document.querySelectorAll(`.ask__btn--active`);
+    for (const question of questions) {
       question.classList.remove(`ask__btn--active`);
     }
-    if (target.classList.contains(`ask__btn`)) {
-      target.classList.add(`ask__btn--active`);
-    }
-  })
+    ask.addEventListener(`click`, (evt) => {
+      let target = evt.target;
+      for (const question of document.querySelectorAll(`.ask__btn--active`)) {
+        question.classList.remove(`ask__btn--active`);
+      }
+      if (target.classList.contains(`ask__btn`)) {
+        console.log(target);
+        target.classList.toggle(`ask__btn--active`);
+      }
+    })
+  }
 }
 
 'use strict';
 {
-  document.querySelector(`.shop__no-js`).classList.remove(`shop__no-js`);
-  // import Swiper from 'swiper/bundle';
-  new Swiper(`.shop__container`, {
-    navigation: {
-      nextEl: `.swiper-button-next`,
-      prevEl: `.swiper-button-prev`
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + '</span>';
+  if (document.querySelector(`.shop`)) {
+    document.querySelector(`.shop__no-js`).classList.remove(`shop__no-js`);
+    // import Swiper from 'swiper/bundle';
+    new Swiper(`.shop__container`, {
+      navigation: {
+        nextEl: `.swiper-button-next`,
+        prevEl: `.swiper-button-prev`
       },
-      renderFraction: function (currentClass, totalClass) {
-        return '<span class="' + currentClass + '"></span>' +
-                ' of ' +
-                '<span class="' + totalClass + '"></span>';
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' +
+                  ' of ' +
+                  '<span class="' + totalClass + '"></span>';
+        }
+      },
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      loop: true,
+      a11y: {
+        enabled: true,
+      },
+      spaceBetween: 30,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          pagination: {
+            type: 'fraction'
+          }
+        },
+        767: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          pagination: {
+            type: 'bullets'
+          }
+        },
+        1201: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          pagination: {
+            type: 'bullets'
+          }
+        }
       }
-    },
-    slidesPerView: 4,
-    slidesPerGroup: 4,
-    loop: true,
-    a11y: {
-      enabled: true,
-    },
-    spaceBetween: 30,
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        pagination: {
-          type: 'fraction'
-        }
-      },
-      767: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        pagination: {
-          type: 'bullets'
-        }
-      },
-      1201: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
-        pagination: {
-          type: 'bullets'
-        }
-      }
-    }
-  });
+    });
+  }
 }
 

@@ -1,0 +1,131 @@
+.products {
+  margin-bottom: 75px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 67px;
+  }
+}
+
+.products__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 36px;
+  max-width: 870px;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 22px;
+  }
+}
+
+.products__item {
+  width: 270px;
+  min-height: 334px;
+
+  @media (max-width: $tablet-width) {
+    width: 206px;
+    min-height: 270px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 130px;
+    min-height: 214px;
+  }
+}
+
+.products__img {
+  width: 270px;
+  height: 272px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 206px;
+    height: 208px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 130px;
+    height: 136px;
+  }
+}
+
+.products__item-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: $black;
+  margin: 0;
+  margin-top: 21px;
+}
+
+.products__item-price {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: $black;
+  margin: 0;
+  margin-top: 7px;
+}
+
+.product__navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 37px;
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+    &>a {
+      display: none;
+    }
+  }
+}
+
+.product__prev {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $black;
+}
+
+.product__next {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $black;
+}
+
+.product__sites {
+  display: flex;
+  flex-wrap: wrap;
+  width: 142px;
+
+  @media (max-width: $mobile-width) {
+    width: 155px;
+  }
+}
+
+.product__site {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $placeholder;
+  padding: 0 7px;
+
+  &--active {
+    color: $black;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 11px;
+  }
+}

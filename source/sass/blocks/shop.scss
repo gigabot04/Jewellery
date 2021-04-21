@@ -7,7 +7,25 @@
 }
 
 .shop__no-js {
-  display: none;
+  & .shop__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  & .shop__slide {
+    width: 290px;
+
+    @media (max-width: $tablet-blog) {
+      width: 324px;
+      &:nth-child(2n + 1) {
+        margin-right: 15px;
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 130px;
+    }
+  }
 }
 
 .shop__head {
