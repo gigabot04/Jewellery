@@ -158,5 +158,47 @@
       }
     });
   }
+  if (document.querySelector(`.cart`)) {
+    var cartThumbs = new Swiper('.cart__thumbs', {
+      autoHeight: false,
+      slidesPerView: 3,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+
+      breakpoints: {
+        768: {
+          direction: 'horizontal',
+          spaceBetween: 14,
+        },
+        1024: {
+          direction: 'vertical',
+          spaceBetween: 30,
+        }
+      }
+    });
+    var cartTop = new Swiper('.cart__top', {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: cartThumbs
+      },
+
+      breakpoints: {
+        320: {
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+              return '<span class="' + currentClass + '"></span>' +
+                      ' of ' +
+                      '<span class="' + totalClass + '"></span>';
+          }
+          },
+        },
+        786: {
+          pagination: false,
+        },
+      },
+    });
+  }
 }
 
