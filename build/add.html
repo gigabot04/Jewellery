@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="description">
+  <title>Jewellery</title>
+  <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font">
+  <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="overlay overlay-active" tabindex="1"></div>
+  <section class="add add-active">
+    <h2 class="add__head">The item was added to your cart</h2>
+    <div class="add__product">
+      <div class="add__img">
+        <picture>
+          <source srcset="img/product/necklace-detail-desktop.webp 1x, img/product/necklace-detail-desktop@2x.webp 2x" type="image/webp">
+          <img src="img/product/necklace-detail-desktop.jpg" srcset="img/product/necklace-detail-desktop@2x.jpg 2x" width="470" height="435" alt="necklace-detail">
+        </picture>
+      </div>
+      <div class="add__info">
+        <h3>Gold Necklace</h3>
+        <p>$ 115</p>
+      </div>
+      <div class="add__quantity">
+        <button type="button" aria-label="Increase the number of products by 1"></button>
+        <p>1</p>
+        <button aria-label="Reduce the number of products by 1"></button>
+      </div>
+    </div>
+    <div class="add__result">
+      <p>You have 1 item in the cart</p>
+      <p>Cart subtotal: $ 115</p>
+    </div>
+    <div class="add__btn">
+      <button class="add__continue" type="button">Continue shopping</button>
+      <a href="#">Checkout</a>
+    </div>
+    <button class="add__close-btn" aria-label="Close"></button>
+  </section>
+</body>
+</html>

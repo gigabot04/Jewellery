@@ -42,14 +42,14 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 24px;
-    margin-bottom: 89px;
+    margin-bottom: 75px;
 
     & .shop__btn {
       margin-bottom: 54px;
     }
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     margin-top: 17px;
     margin-bottom: 65px;
 
@@ -186,7 +186,7 @@
       margin-bottom: 48px;
     }
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: $mobile-width) {
       margin-bottom: 34px;
     }
   }

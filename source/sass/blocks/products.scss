@@ -29,7 +29,7 @@
     min-height: 270px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     width: 130px;
     min-height: 214px;
   }
@@ -50,7 +50,7 @@
     height: 208px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     width: 130px;
     height: 136px;
   }
@@ -80,10 +80,12 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 37px;
+  margin-top: 73px;
 
   @media (max-width: $mobile-width) {
+    margin-top: 37px;
     justify-content: center;
+
     &>a {
       display: none;
     }
