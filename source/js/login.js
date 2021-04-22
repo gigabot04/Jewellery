@@ -6,6 +6,7 @@
     const overlay = document.querySelector(`.overlay`);
     const body = document.querySelector(`body`);
     const openBtn = document.querySelector(`.header__login`);
+    const openBtn2 = document.querySelector(`.header__nav-login`);
     const inputEmail = modalLogin.querySelector(`input#email`);
     const inputPass = modalLogin.querySelector(`input#pass`);
     const onModalEscPress = (evt) => {
@@ -40,5 +41,6 @@
       openBtn.focus();
     }
     openBtn.addEventListener(`click`, openModalAdd);
+    openBtn2.addEventListener(`click`, openModalAdd);
   }
 }
