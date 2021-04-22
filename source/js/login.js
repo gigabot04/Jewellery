@@ -37,7 +37,9 @@
       closeBtn.removeEventListener(`click`, closeModalAdd);
       overlay.removeEventListener(`click`, closeModalAdd);
       document.removeEventListener(`keydown`, onModalEscPress);
-      body.classList.remove(`body__js`);
+      if (!document.querySelector(`.header__nav--active`)) {
+        body.classList.remove(`body__js`);
+      }
       openBtn.focus();
     }
     openBtn.addEventListener(`click`, openModalAdd);
