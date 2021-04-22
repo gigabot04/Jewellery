@@ -28,6 +28,37 @@
   }
 }
 
+.shop__product {
+  margin-top: 25px;
+  margin-bottom: 123px;
+
+  & h2 {
+    margin-bottom: 20px;
+  }
+
+  & .shop__btn {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 24px;
+    margin-bottom: 89px;
+
+    & .shop__btn {
+      margin-bottom: 54px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 17px;
+    margin-bottom: 65px;
+
+    & .shop__btn {
+      margin-bottom: 44px;
+    }
+  }
+}
+
 .shop__head {
   font-family: "CormorantGaramond", "Arial", sans-serif;
   font-style: normal;
