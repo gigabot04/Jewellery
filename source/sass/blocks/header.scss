@@ -1,6 +1,7 @@
 .header {
   border-bottom: 1px solid $border;
   flex: 0 0 auto;
+
   @media (max-width: $tablet-width) {
     border: none;
   }
@@ -49,7 +50,6 @@
   & .header__nav {
     display: block;
   }
-
 }
 
 .header__container {
@@ -74,6 +74,15 @@
   color: $black;
   display: block;
   height: min-content;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+
+  &:active {
+    color: rgba($brown, 0.7);
+  }
 
   @media (max-width: $mobile-width) {
     padding: 13px;
@@ -132,6 +141,11 @@
     width: 192px;
     height: 35px;
 
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $black;
+    }
+
     &::placeholder {
       font-weight: 500;
       font-size: 14px;
@@ -182,15 +196,16 @@
     border: none;
     background-color: transparent;
     height: 50px;
-      &::after {
-        content: "";
-        display: block;
-        margin: 0 auto;
-        width: 25px;
-        height: 2px;
-        background-color: $black;
-        box-shadow: 0 8px 0 0 $black, 0 -8px 0 0 $black;
-      }
+
+    &::after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 25px;
+      height: 2px;
+      background-color: $black;
+      box-shadow: 0 8px 0 0 $black, 0 -8px 0 0 $black;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -295,6 +310,15 @@
   line-height: 36px;
   color: $white;
   padding: 10px 0;
+
+  &:hover,
+  &:focus {
+    color: $light-gray;
+  }
+
+  &:active {
+    color: rgba($light-gray, 0.7);
+  }
 }
 
 .header__nav-info {
@@ -309,6 +333,15 @@
     line-height: 130%;
     color: rgba($white, 0.75);
     padding: 10px 0;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+
+    &:active {
+      color: rgba($white, 0.7);
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -322,6 +355,15 @@
   line-height: 130%;
   color: $white;
   margin: 45px;
+
+  &:hover,
+  &:focus {
+    color: $light-gray;
+  }
+
+  &:active {
+    color: rgba($light-gray, 0.7);
+  }
 
   @media (max-width: $mobile-width) {
     margin: 16px;

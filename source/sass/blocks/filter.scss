@@ -9,7 +9,7 @@
   @media (max-width: $tablet-blog) {
     display: none;
     background-color: $white;
-    box-shadow: 0px 5px 32px rgba($shadow, 0.24);;
+    box-shadow: 0 5px 32px rgba($shadow, 0.24);
     padding-right: 0;
     min-width: 442px;
     min-height: 841px;
@@ -25,7 +25,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    min-width: 270px
+    min-width: 270px;
   }
 }
 
@@ -49,7 +49,7 @@
   }
 
   &--active {
-    & .filter__list{
+    & .filter__list {
       display: flex;
     }
 
@@ -70,7 +70,6 @@
   }
 
   @media (max-width: $mobile-width) {
-
     &:last-of-type {
       & .filter__list {
         padding-left: 0;
@@ -92,7 +91,17 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
+  cursor: pointer;
   color: $black;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+
+  &:active {
+    color: rgba($brown, 0.7);
+  }
 
   &::after {
     content: "";
@@ -146,6 +155,16 @@
     padding: 0 25px;
     margin-bottom: 12px;
     position: relative;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
+
+    &:active {
+      color: rgba($brown, 0.7);
+    }
 
     &::after {
       content: "";
@@ -165,7 +184,7 @@
   }
 
   @media (max-width: $tablet-blog) {
-    padding: 0px 55px 19px;
+    padding: 0 55px 19px;
     margin-top: -10px;
 
     & label {
@@ -198,6 +217,16 @@
   margin-top: 35px;
   margin-bottom: 25px;
 
+
+  &:hover,
+  &:focus {
+    background-color: rgba($brown, 0.9);
+  }
+
+  &:active {
+    background-color: rgba($brown, 0.7);
+  }
+
   @media (max-width: $tablet-blog) {
     margin: 0 40px;
     margin-top: 40px;
@@ -216,6 +245,17 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: rgba($brown, 0.9);
+  }
+
+  &:active {
+    background-color: rgba($brown, 0.7);
+  }
+
 
   @media (max-width: $tablet-blog) {
     margin: 0 40px;
@@ -272,6 +312,17 @@
   border: none;
   top: -50%;
   transform: translateY(-50%);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($brown, 0.9);
+  }
+
+  &:active {
+    background-color: rgba($brown, 0.7);
+  }
+
 
   @media (max-width: $tablet-blog) {
     width: 18px;

@@ -26,12 +26,21 @@
 .main__btn-filter {
   display: none;
 
+  &:hover,
+  &:focus {
+    background-color: rgba($brown, 0.9);
+  }
+
+  &:active {
+    background-color: rgba($brown, 0.7);
+  }
+
   @media (max-width: $tablet-blog) {
     display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 130%;
-    color: #FFFFFF;
+    color: $white;
     background-color: $brown;
     width: 100%;
     min-height: 68px;
@@ -85,6 +94,10 @@
     &--active {
       display: block;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    left: 255px;
   }
 
   @media (max-width: $mobile-width) {

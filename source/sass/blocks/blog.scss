@@ -34,6 +34,15 @@
   margin: 0 auto;
   margin-bottom: 64px;
 
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+
+  &:active {
+    color: rgba($brown, 0.7);
+  }
+
   @media (max-width: $mobile-width) {
     margin-bottom: 55px;
   }
@@ -201,4 +210,13 @@
   display: block;
   width: max-content;
   margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+
+  &:active {
+    color: rgba($brown, 0.7);
+  }
 }

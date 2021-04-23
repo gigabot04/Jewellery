@@ -10,6 +10,7 @@
     margin-top: 43px;
     margin-bottom: 80px;
   }
+
   @media (max-width: $mobile-width) {
     margin-top: 34px;
     margin-bottom: 70px;
@@ -41,6 +42,15 @@
   width: max-content;
   margin: 0 auto;
   margin-bottom: 67px;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+
+  &:active {
+    color: rgba($brown, 0.7);
+  }
 
   @media (max-width: $tablet-blog) {
     margin-bottom: 64px;
@@ -77,10 +87,9 @@
   background-color: $brown;
 
   & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &:nth-child(7n + 2) {

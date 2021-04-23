@@ -17,6 +17,7 @@
 
     @media (max-width: $tablet-blog) {
       width: 324px;
+
       &:nth-child(2n + 1) {
         margin-right: 15px;
       }
@@ -25,6 +26,15 @@
     @media (max-width: $mobile-width) {
       width: 130px;
     }
+  }
+}
+
+.shop__slide {
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
   }
 }
 
@@ -84,6 +94,15 @@
   margin: 0 auto;
   margin-bottom: 57px;
 
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+
+  &:active {
+    color: rgba($brown, 0.7);
+  }
+
   @media (max-width: $tablet-width) {
     margin-bottom: 54px;
   }
@@ -136,9 +155,11 @@
 
 .swiper-button-next:focus,
 .swiper-button-prev:focus {
-   &::before {
-    outline: 2px solid #000;
-   }
+  outline: none;
+
+  &::before {
+    outline: 2px solid $clear-black;
+  }
 }
 
 .swiper-button-next::before,
@@ -169,10 +190,6 @@
 .swiper-button-prev {
   top: 78px;
 
-  &:focus {
-    outline: none;
-  }
-
   @media (max-width: $mobile-width) {
     display: none;
   }
@@ -194,6 +211,7 @@
   & .swiper-pagination {
     bottom: 0;
   }
+
   & .swiper-pagination-bullet {
     font-family: "Poppins", "Courier New", monospace;
     font-style: normal;
@@ -205,6 +223,16 @@
     width: 13px;
     height: min-content;
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: $black;
+    }
+
+    &:active {
+      color: rgba($black, 0.7);
+    }
+
 
     &-active {
       color: $black;
@@ -235,4 +263,3 @@
     margin-top: 0;
   }
 }
-

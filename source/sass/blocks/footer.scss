@@ -74,10 +74,15 @@
   display: flex;
   justify-content: space-between;
 
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $brown;
+  }
+
   & input {
     border: none;
     background-color: transparent;
-    padding: 0px;
+    padding: 0;
     flex: 1 0 auto;
     color: $white;
 
@@ -97,6 +102,15 @@
     color: $white;
     flex: 0 0 auto;
     margin-top: 3px;
+
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
+
+    &:active {
+      color: rgba($brown, 0.7);
+    }
   }
 
   @media (max-width: $tablet-width) {
@@ -127,6 +141,15 @@
     line-height: 130%;
     color: $white;
     list-style: none;
+
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
+
+    &:active {
+      color: rgba($brown, 0.7);
+    }
   }
 
   & li {
@@ -134,7 +157,7 @@
   }
 
   & li:not(:last-child) {
-    margin-bottom: 23px
+    margin-bottom: 23px;
   }
 
   @media (max-width: $tablet-width) {
@@ -154,9 +177,7 @@
     margin-left: 0;
     margin-right: 0;
   }
-}
 
-.footer__list-two {
   @media (max-width: $mobile-width) {
     margin-top: 40px;
   }

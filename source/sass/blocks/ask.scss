@@ -32,7 +32,6 @@
 }
 
 .ask__btn {
-  border: none;
   background-color: transparent;
   border: 1px solid $brown;
   padding: 43px 42px;
@@ -45,6 +44,19 @@
   color: $black;
   position: relative;
   border-bottom: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $brown;
+
+    & span {
+      color: $black;
+    }
+  }
+
+  &:active {
+    color: rgba($brown, 0.7);
+  }
 
   &:last-child {
     border-bottom: 1px solid $brown;

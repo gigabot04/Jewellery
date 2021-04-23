@@ -21,4 +21,13 @@
   line-height: 24px;
   color: $black;
   padding: 19px 17px;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+
+  &:active {
+    color: rgba($brown, 0.7);
+  }
 }
