@@ -12,17 +12,18 @@
   <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font">
   <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font">
   <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font">
-  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
-    <div class="header__wrapper wrapper header__no-js">
+    <div class="header__wrapper wrapper header-no-js">
       <button type="button" class="header__btn-nav">
         <span class="visually-hidden">Кнопка открытия или закрытия меню</span>
       </button>
       <form class="header__search" action="#">
-        <input type="text" placeholder="Type here to search">
+        <label>
+          <input type="text" placeholder="Type here to search">
+        </label>
       </form>
       <a href="index.html" class="header__logo">
         <svg class="header__logo-svg" width="66" height="66" viewBox="0 0 66 66">
@@ -47,7 +48,9 @@
       </div>
       <div class="header__nav">
         <form class="header__nav-search" action="#">
-          <input type="text">
+          <label>
+            <input type="text">
+          </label>
         </form>
         <div class="header__nav-items">
           <a class="header__nav-item" href="#">What’s new</a>
@@ -169,7 +172,7 @@
         </div>
       </div>
     </section>
-    <section class="shop shop__product shop__no-js">
+    <section class="shop shop-product shop-no-js">
       <div class="shop__container swiper-container">
         <h2 class="shop__head">You May Also Like</h2>
         <a href="catalog.html" class="shop__btn">Shop Now</a>
@@ -307,7 +310,9 @@
         <h2>The good stuff in your inbox</h2>
         <p>News and updates from CH. No spam, we promise.</p>
         <div class="footer__input-email">
-          <input type="email" name="email" id="email" placeholder="Your E-mail">
+          <label>
+            <input type="email" name="email-footer" id="email-footer" placeholder="Your E-mail">
+          </label>
           <a href="#">
             Sign Up
             <svg class="footer__svg-arrow" width="30" height="11" viewBox="0 0 30 11">

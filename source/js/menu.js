@@ -8,7 +8,7 @@
   const cartHeader = document.querySelector(`.header__cart-svg`);
   const navheader = document.querySelector(`.header__nav`);
   const body = document.querySelector(`body`);
-  document.querySelector(`.header__no-js`).classList.remove(`header__no-js`);
+  document.querySelector(`.header-no-js`).classList.remove(`header-no-js`);
 
   openMenuHeader.addEventListener(`click`, () => {
     headerWrap.classList.toggle(`header__wrapper--active`);
