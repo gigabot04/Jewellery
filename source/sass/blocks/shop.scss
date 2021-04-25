@@ -4,6 +4,11 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin-top: 33px;
+  padding: 0 50px;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
 }
 
 .shop-no-js {
@@ -15,7 +20,7 @@
   & .shop__slide {
     width: 290px;
 
-    @media (max-width: $tablet-blog) {
+    @media (max-width: $tablet-width) {
       width: 324px;
 
       &:nth-child(2n + 1) {
@@ -41,6 +46,7 @@
 .shop-product {
   margin-top: 25px;
   margin-bottom: 123px;
+  padding: 0 50px;
 
   & h2 {
     margin-bottom: 20px;
@@ -53,6 +59,7 @@
   @media (max-width: $tablet-width) {
     margin-top: 24px;
     margin-bottom: 75px;
+    padding: 0 50px;
 
     & .shop__btn {
       margin-bottom: 54px;
@@ -62,6 +69,7 @@
   @media (max-width: $mobile-width) {
     margin-top: 17px;
     margin-bottom: 65px;
+    padding: 0 15px;
 
     & .shop__btn {
       margin-bottom: 44px;
@@ -120,6 +128,10 @@
   color: $black;
   margin-top: 21px;
   margin-bottom: 8px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 12px;
+  }
 }
 
 .shop__prod-price {
@@ -132,22 +144,18 @@
 }
 
 .shop__img {
-  width: 270px;
-  height: 284px;
+  max-width: 100%;
+  height: auto;
 
   & img {
     width: 100%;
     height: 100%;
   }
 
-  @media (max-width: $tablet-swiper) {
-    width: 324px;
-    height: 340px;
-  }
-
-  @media (max-width: $mobile-swiper) {
-    width: 130px;
-    height: 136px;
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
   }
 }
 
@@ -250,16 +258,21 @@
 }
 
 .swiper-container {
+  width: 100%;
   max-width: 1170px;
   margin-top: 57px;
 
-  @media (max-width: $tablet-swiper) {
-    max-width: 678px;
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
     margin-top: 9px;
   }
 
-  @media (max-width: $mobile-swiper) {
-    max-width: 290px;
+  @media (max-width: $mobile-width) {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
     margin-top: 0;
   }
 }

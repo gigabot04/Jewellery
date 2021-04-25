@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 26px;
+    margin-top: 30px;
   }
 }
 
@@ -32,7 +32,7 @@
   display: block;
   width: max-content;
   margin: 0 auto;
-  margin-bottom: 64px;
+  margin-bottom: 60px;
 
   &:hover,
   &:focus {
@@ -41,6 +41,10 @@
 
   &:active {
     color: rgba($brown, 0.7);
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 64px;
   }
 
   @media (max-width: $mobile-width) {
@@ -54,24 +58,30 @@
   grid-template-rows: 1fr 1fr;
   row-gap: 30px;
   column-gap: 30px;
+  max-width: 1170px;
 
   @media (max-width: $tablet-blog) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    row-gap: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
     row-gap: 50px;
   }
 
   @media (max-width: $mobile-width) {
     row-gap: 40px;
+    padding: 0 15px;
   }
 }
 
 .blog__article {
   position: relative;
-  width: 570px;
+  width: 100%;
+  max-width: 570px;
   min-height: 300px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 
   &:nth-child(3n) {
@@ -95,7 +105,13 @@
   }
 
   @media (max-width: $tablet-blog) {
-    width: 678px;
+    min-height: 200px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    max-width: 678px;
+
 
     &:nth-child(3n + 2) {
       grid-column: auto;
@@ -116,8 +132,10 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
+    width: 100%;
+    min-height: 512px;
     flex-direction: column;
+    justify-content: flex-start;
 
     &:nth-child(3n + 2) {
       grid-column: auto;
@@ -125,8 +143,8 @@
       order: 1;
 
       & .blog__img {
-        width: 290px;
-        height: 256px;
+        width: 100%;
+        height: auto;
       }
 
       & .blog__article-info {
@@ -158,8 +176,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
-    height: 256px;
+    width: 100%;
+    height: auto;
+    max-height: 256px;
   }
 }
 
@@ -169,17 +188,21 @@
   flex: 0 0 auto;
   width: 285px;
   min-height: 300px;
-  padding: 56px;
+  padding: 56px 3.5em;
 
   @media (max-width: $tablet-blog) {
     width: 50%;
-    padding: 56px 83px;
+    padding: 3.5em 1em 5px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 3.5em 83px 5px;
   }
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    padding: 31px 62px;
-    min-height: 256px;
+    padding: 31px 62px 0;
+    min-height: 55%;
   }
 }
 

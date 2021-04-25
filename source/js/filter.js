@@ -10,7 +10,7 @@ if (document.querySelector(`.filter`)) {
     });
   }
   const filter = document.querySelector(`.filter`);
-  filter.classList.remove(`filter__no-js`);
+  filter.classList.remove(`filter-no-js`);
   const openFilterBtn = document.querySelector(`.main__btn-filter`);
   const body = document.querySelector(`body`);
   const closeFilterBtn = document.querySelector(`.main__close-filter`);

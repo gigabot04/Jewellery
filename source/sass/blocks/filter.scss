@@ -6,12 +6,12 @@
   flex-direction: column;
 
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     display: none;
     background-color: $white;
     box-shadow: 0 5px 32px rgba($shadow, 0.24);
     padding-right: 0;
-    min-width: 442px;
+    min-width: 270px;
     min-height: 841px;
     position: fixed;
     overflow-y: scroll;
@@ -22,10 +22,6 @@
     &--active {
       display: flex;
     }
-  }
-
-  @media (max-width: $tablet-width) {
-    min-width: 270px;
   }
 }
 
@@ -58,7 +54,7 @@
     }
   }
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     border: none;
     border-bottom: 1px solid $brown;
 
@@ -116,7 +112,7 @@
     transition: 0.5s;
   }
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     font-size: 18px;
     padding: 34px 40px;
 
@@ -183,7 +179,7 @@
     background-color: $brown;
   }
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     padding: 0 55px 19px;
     margin-top: -10px;
 
@@ -227,7 +223,7 @@
     background-color: rgba($brown, 0.7);
   }
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     margin: 0 40px;
     margin-top: 40px;
     margin-bottom: 25px;
@@ -257,7 +253,7 @@
   }
 
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     margin: 0 40px;
     margin-top: 40px;
     margin-bottom: 25px;
@@ -271,7 +267,7 @@
 .filter__range {
   min-height: 41px;
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     padding: 11px 27px;
   }
 
@@ -286,11 +282,7 @@
   height: 1px;
   background-color: $light-gray;
 
-  @media (max-width: $tablet-blog) {
-    width: 303px;
-  }
-
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     width: 250px;
   }
 }
@@ -324,7 +316,7 @@
   }
 
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     width: 18px;
     height: 18px;
   }

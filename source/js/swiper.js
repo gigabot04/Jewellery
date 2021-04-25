@@ -40,7 +40,7 @@ if (document.querySelector(`.shop`)) {
           type: `bullets`
         }
       },
-      1201: {
+      1023: {
         slidesPerView: 4,
         slidesPerGroup: 4,
         pagination: {

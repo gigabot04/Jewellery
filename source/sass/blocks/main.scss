@@ -10,7 +10,7 @@
   padding: 0 25px;
   justify-content: space-between;
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
     padding: 0 45px;
@@ -35,7 +35,7 @@
     background-color: rgba($brown, 0.7);
   }
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     display: block;
     font-weight: 500;
     font-size: 16px;
@@ -56,7 +56,7 @@
 .main__close-filter {
   display: none;
 
-  @media (max-width: $tablet-blog) {
+  @media (max-width: $tablet-width) {
     position: fixed;
     top: 5px;
     left: 426px;
