@@ -1532,7 +1532,7 @@ template {
     .blog__article-info {
       width: 100%;
       padding: 31px 62px 0;
-      min-height: 55%; } }
+      min-height: 50%; } }
 
 .blog__date {
   font-weight: 500;
