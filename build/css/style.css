@@ -2466,7 +2466,8 @@ template {
   -webkit-box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
           box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
   z-index: 4;
-  display: none; }
+  display: none;
+  overflow-y: scroll; }
   @media (max-width: 767px) {
     .add {
       width: 290px;
@@ -2728,6 +2729,7 @@ template {
           box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
   z-index: 4;
   display: none;
+  overflow-y: scroll;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

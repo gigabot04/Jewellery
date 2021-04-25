@@ -10,6 +10,7 @@
   box-shadow: 0 5px 32px rgba($shadow3, 0.24);
   z-index: 4;
   display: none;
+  overflow-y: scroll;
   flex-direction: column;
 
   & h2 {

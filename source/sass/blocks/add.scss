@@ -9,6 +9,7 @@
   box-shadow: 0 4px 32px rgba($shadow2, 0.24);
   z-index: 4;
   display: none;
+  overflow-y: scroll;
 
   @media (max-width: $mobile-width) {
     width: 290px;
