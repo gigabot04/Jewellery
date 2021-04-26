@@ -16,8 +16,8 @@ if (document.querySelector(`.login`)) {
   };
   const openModalAdd = (evt) => {
     evt.preventDefault();
-    overlay.classList.add(`overlay-active`);
-    modalLogin.classList.add(`login-active`);
+    overlay.classList.add(`overlay--active`);
+    modalLogin.classList.add(`login--active`);
     closeBtn.addEventListener(`click`, closeModalAdd);
     overlay.addEventListener(`click`, closeModalAdd);
     document.addEventListener(`keydown`, onModalEscPress);
@@ -30,8 +30,8 @@ if (document.querySelector(`.login`)) {
   };
   const closeModalAdd = (evt) => {
     evt.preventDefault();
-    overlay.classList.remove(`overlay-active`);
-    modalLogin.classList.remove(`login-active`);
+    overlay.classList.remove(`overlay--active`);
+    modalLogin.classList.remove(`login--active`);
     closeBtn.removeEventListener(`click`, closeModalAdd);
     overlay.removeEventListener(`click`, closeModalAdd);
     document.removeEventListener(`keydown`, onModalEscPress);

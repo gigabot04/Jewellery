@@ -15,8 +15,8 @@ if (document.querySelector(`.add`)) {
   };
   const openModalAdd = (evt) => {
     evt.preventDefault();
-    overlay.classList.add(`overlay-active`);
-    modalAdd.classList.add(`add-active`);
+    overlay.classList.add(`overlay--active`);
+    modalAdd.classList.add(`add--active`);
     closeBtn.addEventListener(`click`, closeModalAdd);
     overlay.addEventListener(`click`, closeModalAdd);
     document.addEventListener(`keydown`, onModalEscPress);
@@ -25,8 +25,8 @@ if (document.querySelector(`.add`)) {
   };
   const closeModalAdd = (evt) => {
     evt.preventDefault();
-    overlay.classList.remove(`overlay-active`);
-    modalAdd.classList.remove(`add-active`);
+    overlay.classList.remove(`overlay--active`);
+    modalAdd.classList.remove(`add--active`);
     closeBtn.removeEventListener(`click`, closeModalAdd);
     overlay.removeEventListener(`click`, closeModalAdd);
     document.removeEventListener(`keydown`, onModalEscPress);

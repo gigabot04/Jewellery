@@ -1,0 +1,33 @@
+.shop-product {
+  margin-top: 25px;
+  margin-bottom: 119px;
+  padding: 0 50px;
+
+  & h2 {
+    margin-bottom: 20px;
+  }
+
+  & .shop__btn {
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-top: 24px;
+    margin-bottom: 75px;
+    padding: 0 50px;
+
+    & .shop__btn {
+      margin-bottom: 54px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 17px;
+    margin-bottom: 69px;
+    padding: 0 15px;
+
+    & .shop__btn {
+      margin-bottom: 44px;
+    }
+  }
+}

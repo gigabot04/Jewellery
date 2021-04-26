@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 <body>
-  <div class="overlay overlay-active" tabindex="1"></div>
+  <div class="overlay overlay--active" tabindex="1"></div>
   <form class="login login-active" action="#">
     <h2>Log In</h2>
     <label class="login__input">
@@ -25,12 +25,12 @@
       <input type="password" name="pass" id="pass" placeholder="Password">
     </label>
     <a class="login__forgot" href="#">Forgot your password?</a>
-    <button class="login__btn">Log In</button>
+    <button class="login__btn" type="submit">Log In</button>
     <div class="login__signup">
       <p>Don’t have an account?</p>
       <a href="#">Sign up</a>
     </div>
-    <button class="login__close" aria-label="Close"></button>
+    <button class="login__close" type="button" aria-label="Close"></button>
   </form>
 </body>
 </html>

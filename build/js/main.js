@@ -15,8 +15,8 @@ if (document.querySelector(`.add`)) {
   };
   const openModalAdd = (evt) => {
     evt.preventDefault();
-    overlay.classList.add(`overlay-active`);
-    modalAdd.classList.add(`add-active`);
+    overlay.classList.add(`overlay--active`);
+    modalAdd.classList.add(`add--active`);
     closeBtn.addEventListener(`click`, closeModalAdd);
     overlay.addEventListener(`click`, closeModalAdd);
     document.addEventListener(`keydown`, onModalEscPress);
@@ -25,8 +25,8 @@ if (document.querySelector(`.add`)) {
   };
   const closeModalAdd = (evt) => {
     evt.preventDefault();
-    overlay.classList.remove(`overlay-active`);
-    modalAdd.classList.remove(`add-active`);
+    overlay.classList.remove(`overlay--active`);
+    modalAdd.classList.remove(`add--active`);
     closeBtn.removeEventListener(`click`, closeModalAdd);
     overlay.removeEventListener(`click`, closeModalAdd);
     document.removeEventListener(`keydown`, onModalEscPress);
@@ -50,7 +50,7 @@ if (document.querySelector(`.filter`)) {
     });
   }
   const filter = document.querySelector(`.filter`);
-  filter.classList.remove(`filter-no-js`);
+  filter.classList.remove(`filter--no-js`);
   const openFilterBtn = document.querySelector(`.main__btn-filter`);
   const body = document.querySelector(`body`);
   const closeFilterBtn = document.querySelector(`.main__close-filter`);
@@ -104,8 +104,8 @@ if (document.querySelector(`.login`)) {
   };
   const openModalAdd = (evt) => {
     evt.preventDefault();
-    overlay.classList.add(`overlay-active`);
-    modalLogin.classList.add(`login-active`);
+    overlay.classList.add(`overlay--active`);
+    modalLogin.classList.add(`login--active`);
     closeBtn.addEventListener(`click`, closeModalAdd);
     overlay.addEventListener(`click`, closeModalAdd);
     document.addEventListener(`keydown`, onModalEscPress);
@@ -118,8 +118,8 @@ if (document.querySelector(`.login`)) {
   };
   const closeModalAdd = (evt) => {
     evt.preventDefault();
-    overlay.classList.remove(`overlay-active`);
-    modalLogin.classList.remove(`login-active`);
+    overlay.classList.remove(`overlay--active`);
+    modalLogin.classList.remove(`login--active`);
     closeBtn.removeEventListener(`click`, closeModalAdd);
     overlay.removeEventListener(`click`, closeModalAdd);
     document.removeEventListener(`keydown`, onModalEscPress);
@@ -136,20 +136,18 @@ if (document.querySelector(`.login`)) {
 {
   const openMenuHeader = document.querySelector(`.header__btn-nav`);
   const headerWrap = document.querySelector(`.header__wrapper`);
-  const logoWhiteHeader = document.querySelector(`.header__logo-svg-white`);
   const logoHeader = document.querySelector(`.header__logo-svg`);
-  const cartWhiteHeader = document.querySelector(`.header__cart-svg-white`);
   const cartHeader = document.querySelector(`.header__cart-svg`);
   const navheader = document.querySelector(`.header__nav`);
   const body = document.querySelector(`body`);
-  document.querySelector(`.header-no-js`).classList.remove(`header-no-js`);
+  const search = document.querySelector(`.header__search`);
+  document.querySelector(`.header--no-js`).classList.remove(`header--no-js`);
 
   openMenuHeader.addEventListener(`click`, () => {
     headerWrap.classList.toggle(`header__wrapper--active`);
-    logoWhiteHeader.classList.toggle(`header__logo-svg-white--active`);
-    logoHeader.classList.toggle(`header__logo-svg--disable`);
-    cartWhiteHeader.classList.toggle(`header__cart-svg-white--active`);
-    cartHeader.classList.toggle(`header__cart-svg--disable`);
+    logoHeader.classList.toggle(`header__logo-svg--white`);
+    cartHeader.classList.toggle(`header__cart-svg--white`);
+    search.classList.toggle(`header__search--nav`);
     navheader.classList.toggle(`header__nav--active`);
     body.classList.toggle(`body__js`);
   });
@@ -163,12 +161,12 @@ if (document.querySelector(`.ask`)) {
   for (const question of questions) {
     question.classList.remove(`ask__btn--active`);
   }
+  for (const question of document.querySelectorAll(`.ask__btn--active`)) {
+    question.classList.remove(`ask__btn--active`);
+  }
   ask.addEventListener(`click`, (evt) => {
     let target = evt.target;
-    for (const question of document.querySelectorAll(`.ask__btn--active`)) {
-      question.classList.remove(`ask__btn--active`);
-    }
-    if (target.classList.contains(`ask__btn`)) {
+    if (target.tagName === `BUTTON`) {
       target.classList.toggle(`ask__btn--active`);
     }
   });
@@ -176,7 +174,7 @@ if (document.querySelector(`.ask`)) {
 
 'use strict';
 if (document.querySelector(`.shop`)) {
-  document.querySelector(`.shop-no-js`).classList.remove(`shop-no-js`);
+  document.querySelector(`.shop--no-js`).classList.remove(`shop--no-js`);
   const swiper = new Swiper(`.shop__container`, {
     navigation: {
       nextEl: `.swiper-button-next`,
@@ -269,3 +267,20 @@ if (document.querySelector(`.cart`)) {
   });
 }
 
+'use strict';
+
+if (document.querySelector(`.cart__toggle`)) {
+  const tabBtn = document.querySelectorAll(`.cart__btn-info`);
+  const listWrap = document.querySelectorAll(`.cart__item`);
+
+  for (let i = 0; i < tabBtn.length; i++) {
+    tabBtn[i].addEventListener(`click`, () => {
+      for (let j = 0; j < tabBtn.length; j++) {
+        tabBtn[j].classList.remove(`cart__btn-info--active`);
+        listWrap[j].classList.remove(`cart__item--active`);
+      }
+      listWrap[i].classList.add(`cart__item--active`);
+      tabBtn[i].classList.add(`cart__btn-info--active`);
+    });
+  }
+}

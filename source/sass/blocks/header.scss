@@ -2,6 +2,23 @@
   border-bottom: 1px solid $border;
   flex: 0 0 auto;
 
+  &--no-js {
+    & .header__btn-nav {
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+
+    & .header__nav {
+      display: block;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     border: none;
   }
@@ -35,23 +52,6 @@
   }
 }
 
-.header-no-js {
-  & .header__btn-nav {
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-
-  & .header__nav {
-    display: block;
-  }
-}
-
 .header__container {
   width: 235px;
   display: flex;
@@ -61,6 +61,8 @@
 
   @media (max-width: $tablet-width) {
     width: 100%;
+    grid-row: 1;
+    grid-column: 3/4;
     align-items: center;
   }
 }
@@ -157,6 +159,49 @@
   @media (max-width: $tablet-width) {
     display: none;
   }
+
+  &--nav {
+    display: block;
+    grid-column: 1/-1;
+    position: relative;
+    margin-top: 40px;
+    padding: 0 45px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 57px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon/search-white.svg");
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-top: 30px;
+      padding: 0 15px;
+
+      &::after {
+        left: 27px;
+      }
+    }
+
+    & input {
+      margin-left: 0;
+      width: 100%;
+      border: none;
+      border-radius: 21px;
+      background-color: rgba($white, 0.15);
+      height: 40px;
+      padding-left: 40px;
+      color: $white;
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+  }
 }
 
 .header__logo {
@@ -179,6 +224,12 @@
   @media (max-width: $tablet-width) {
     display: block;
     margin-right: 0;
+
+    stroke: $black;
+
+    &--white {
+      stroke: $white;
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -222,7 +273,7 @@
   &--active {
     display: block;
     position: fixed;
-    top: 110px;
+    top: 190px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -232,71 +283,27 @@
 
   @media (max-width: $mobile-width) {
     &--active {
-      top: 72px;
+      top: 142px;
     }
   }
 }
 
-.header__logo-svg,
-.header__cart-svg {
+.header__logo-svg {
+  fill: $brown;
+
   @media (max-width: $tablet-width) {
     display: block;
 
-    &--disable {
-      display: none;
+    &--white {
+      fill: $white;
     }
   }
-}
-
-.header__logo-svg-white,
-.header__cart-svg-white {
-  display: none;
-
-  &--active {
-    display: block;
-    fill: transparent;
-  }
-}
-
-.header__nav-search {
-  position: relative;
-  margin-top: 40px;
-  padding: 0 45px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 12px;
-    left: 57px;
-    width: 16px;
-    height: 16px;
-    background-image: url("../img/icon/search-white.svg");
-    background-repeat: no-repeat;
-  }
-
-  @media (max-width: $mobile-width) {
-    margin-top: 30px;
-    padding: 0 15px;
-
-    &::after {
-      left: 27px;
-    }
-  }
-}
-
-.header__nav-search input {
-  width: 100%;
-  border: none;
-  border-radius: 21px;
-  background-color: rgba($white, 0.15);
-  height: 40px;
-  padding-left: 40px;
 }
 
 .header__nav-items {
   display: flex;
   flex-direction: column;
-  margin: 36px 45px;
+  margin: 22px 45px;
   margin-bottom: 18px;
 
   @media (max-width: $mobile-width) {

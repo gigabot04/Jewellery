@@ -16,7 +16,7 @@
     background-image: url("../img/intro-desktop@2x.jpg");
   }
 
-  & h2 {
+  & h1 {
     font-family: "CormorantGaramond", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -42,46 +42,12 @@
   @media (max-width: $mobile-width) {
     margin-top: 20px;
 
-    & h2 {
+    & h1 {
       font-size: 38px;
     }
 
     & p {
       font-size: 34px;
     }
-  }
-}
-
-.perfection-catalog {
-  background-image: url("../img/intro-catalog-desktop.jpg");
-  min-height: 261px;
-
-  & h2 {
-    margin: 0;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 130%;
-  }
-
-  & p {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 130%;
-    margin: 0;
-  }
-
-  @media (max-width: $tablet-width) {
-    & p {
-      font-size: 22px;
-      line-height: 120%;
-      text-align: center;
-      padding: 0 23px;
-    }
-  }
-
-  @media (max-resolution: 2dppx) {
-    background-image: url("../img/intro-catalog-desktop@2x.jpg");
   }
 }

@@ -80,7 +80,7 @@
     border-bottom: 1px solid $brown;
   }
 
-  & input {
+  & input[type="email"] {
     border: none;
     background-color: transparent;
     padding: 0;
@@ -95,25 +95,6 @@
     }
   }
 
-  & a {
-    max-width: 103px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 130%;
-    color: $white;
-    flex: 0 0 auto;
-    margin-top: 3px;
-
-    &:hover,
-    &:focus {
-      color: $brown;
-    }
-
-    &:active {
-      color: rgba($brown, 0.7);
-    }
-  }
-
   @media (max-width: $tablet-width) {
     margin-right: 12px;
   }
@@ -121,9 +102,32 @@
   @media (max-width: $mobile-width) {
     margin-right: 0;
 
-    & input {
+    & input[type="email"] {
       width: 183px;
     }
+  }
+}
+
+.footer__signup {
+  background-color: transparent;
+  border: none;
+  max-width: 103px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  display: block;
+  padding: 0;
+  color: $white;
+  flex: 0 0 auto;
+  margin-top: 3px;
+
+  &:hover,
+  &:focus {
+    color: $brown;
+  }
+
+  &:active {
+    color: rgba($brown, 0.7);
   }
 }
 

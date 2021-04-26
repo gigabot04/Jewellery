@@ -1,6 +1,6 @@
 'use strict';
 if (document.querySelector(`.shop`)) {
-  document.querySelector(`.shop-no-js`).classList.remove(`shop-no-js`);
+  document.querySelector(`.shop--no-js`).classList.remove(`shop--no-js`);
   const swiper = new Swiper(`.shop__container`, {
     navigation: {
       nextEl: `.swiper-button-next`,
@@ -92,4 +92,3 @@ if (document.querySelector(`.cart`)) {
     },
   });
 }
-

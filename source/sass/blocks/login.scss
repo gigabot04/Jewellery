@@ -4,13 +4,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 430px;
-  min-height: 586px;
+  height: 586px;
   background-color: $light-gray;
   padding: 138px 45px 0;
   box-shadow: 0 5px 32px rgba($shadow3, 0.24);
   z-index: 4;
   display: none;
-  overflow-y: scroll;
+  overflow-y: auto;
   flex-direction: column;
 
   & h2 {
@@ -37,6 +37,10 @@
     background-position: center;
   }
 
+  &--active {
+    display: flex;
+  }
+
   @media (max-width: $tablet-width) {
     width: 442px;
     padding: 138px 51px 0;
@@ -44,7 +48,7 @@
 
   @media (max-width: $mobile-width) {
     width: 270px;
-    min-height: 470px;
+    height: 470px;
     padding: 84px 15px 0;
 
     & h2 {
@@ -56,10 +60,6 @@
       height: 84px;
     }
   }
-}
-
-.login-active {
-  display: flex;
 }
 
 .login__input {

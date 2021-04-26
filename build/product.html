@@ -15,22 +15,20 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <h1 class="visually-hidden">Cart product</h1>
   <header class="header">
-    <div class="header__wrapper wrapper header-no-js">
+    <div class="header__wrapper wrapper header--no-js">
       <button type="button" class="header__btn-nav">
         <span class="visually-hidden">Кнопка открытия или закрытия меню</span>
       </button>
       <form class="header__search" action="#">
         <label>
-          <input type="text" placeholder="Type here to search">
+          <input type="search" name="search" placeholder="Type here to search">
         </label>
       </form>
-      <a href="index.html" class="header__logo">
+      <a class="header__logo" href="index.html">
         <svg class="header__logo-svg" width="66" height="66" viewBox="0 0 66 66">
           <use xlink:href="img/sprite.svg#logo"></use>
-        </svg>
-        <svg class="header__logo-svg-white" width="66" height="66" viewBox="0 0 66 66">
-          <use xlink:href="img/sprite.svg#logo-white"></use>
         </svg>
       </a>
       <div class="header__container">
@@ -41,17 +39,9 @@
           <svg class="header__cart-svg" width="20" height="18" viewBox="0 0 20 18">
             <use xlink:href="img/sprite.svg#cart"></use>
           </svg>
-          <svg class="header__cart-svg-white" width="20" height="18" viewBox="0 0 20 18">
-            <use xlink:href="img/sprite.svg#cart-white"></use>
-          </svg>
         </a>
       </div>
       <div class="header__nav">
-        <form class="header__nav-search" action="#">
-          <label>
-            <input type="text">
-          </label>
-        </form>
         <div class="header__nav-items">
           <a class="header__nav-item" href="#">What’s new</a>
           <a class="header__nav-item" href="#">Chokers</a>
@@ -84,24 +74,28 @@
           <div class="swiper-container cart__top">
             <div class="swiper-wrapper">
               <div class="swiper-slide cart__slide">
+                <!-- 1x:470 2x:940 -->
                 <picture>
                   <source srcset="img/product/necklace-detail-desktop.webp 1x, img/product/necklace-detail-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/product/necklace-detail-desktop.jpg" srcset="img/product/necklace-detail-desktop@2x.jpg 2x" width="470" height="435" alt="necklace-detail">
                 </picture>
               </div>
               <div class="swiper-slide cart__slide">
+                <!-- 1x:470 2x:940 -->
                 <picture>
                   <source srcset="img/product/gold-necklace-for-women-desktop.webp 1x, img/product/gold-necklace-for-women-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/product/gold-necklace-for-women-desktop.jpg" srcset="img/product/gold-necklace-for-women-desktop@2x.jpg 2x" width="470" height="435" alt="gold-necklace-for-women">
                 </picture>
               </div>
               <div class="swiper-slide cart__slide">
+                <!-- 1x:470 2x:940 -->
                 <picture>
                   <source srcset="img/product/pretty-gold-necklace-desktop.webp 1x, img/product/pretty-gold-necklace-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/product/pretty-gold-necklace-desktop.jpg" srcset="img/product/pretty-gold-necklace-desktop@2x.jpg 2x" width="470" height="435" alt=">pretty-gold-necklace">
                 </picture>
               </div>
               <div class="swiper-slide cart__slide">
+                <!-- 1x:470 2x:940 -->
                 <picture>
                   <source srcset="img/product/womens-necklace-set-desktop.webp 1x, img/product/womens-necklace-set-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/product/womens-necklace-set-desktop.jpg" srcset="img/product/womens-necklace-set-desktop@2x.jpg 2x" width="470" height="435" alt="womens-necklace-set">
@@ -113,24 +107,28 @@
           <div class="swiper-container cart__thumbs">
             <div class="swiper-wrapper cart__thumbs-wrapper">
               <div class="swiper-slide cart__slide">
+                <!-- 1x:100 2x:200 -->
                 <picture>
                   <source srcset="img/product/necklace-detail-desktop.webp 1x, img/product/necklace-detail-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/product/necklace-detail-desktop.jpg" srcset="img/product/necklace-detail-desktop@2x.jpg 2x" width="100" height="125" alt="necklace-detail">
                 </picture>
               </div>
               <div class="swiper-slide cart__slide">
+                <!-- 1x:100 2x:200 -->
                 <picture>
                   <source srcset="img/product/gold-necklace-for-women-desktop.webp 1x, img/product/gold-necklace-for-women-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/product/gold-necklace-for-women-desktop.jpg" srcset="img/product/gold-necklace-for-women-desktop@2x.jpg 2x" width="100" height="125" alt="gold-necklace-for-women">
                 </picture>
               </div>
               <div class="swiper-slide cart__slide">
+                <!-- 1x:100 2x:200 -->
                 <picture>
                   <source srcset="img/product/pretty-gold-necklace-desktop.webp 1x, img/product/pretty-gold-necklace-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/product/pretty-gold-necklace-desktop.jpg" srcset="img/product/pretty-gold-necklace-desktop@2x.jpg 2x" width="100" height="125" alt=">pretty-gold-necklace">
                 </picture>
               </div>
               <div class="swiper-slide cart__slide">
+                <!-- 1x:100 2x:200 -->
                 <picture>
                   <source srcset="img/product/womens-necklace-set-desktop.webp 1x, img/product/womens-necklace-set-desktop@2x.webp 2x" type="image/webp">
                   <img src="img/product/womens-necklace-set-desktop.jpg" srcset="img/product/womens-necklace-set-desktop@2x.jpg 2x" width="100" height="125" alt="womens-necklace-set">
@@ -172,13 +170,14 @@
         </div>
       </div>
     </section>
-    <section class="shop shop-product shop-no-js">
+    <section class="shop shop-product shop--no-js">
       <div class="shop__container swiper-container">
         <h2 class="shop__head">You May Also Like</h2>
         <a href="catalog.html" class="shop__btn">Shop Now</a>
         <div class=" shop__wrapper swiper-wrapper">
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
@@ -189,6 +188,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Layered choker">
@@ -199,6 +199,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/dainty-gold-necklace-desktop.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt=">Gold chain">
@@ -209,6 +210,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
@@ -219,6 +221,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
@@ -229,6 +232,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Layered choker">
@@ -239,6 +243,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/dainty-gold-necklace-desktop.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt=">Gold chain">
@@ -249,6 +254,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
@@ -259,6 +265,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/purple-gemstone-necklace-desktop.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/purple-gemstone-necklace-desktop.jpg" srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
@@ -269,6 +276,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/layered-choker-necklace-desktop.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/layered-choker-necklace-desktop.jpg" srcset="img/layered-choker-necklace-desktop@2x.jpg 2x" width="270" height="284" alt="Layered choker">
@@ -279,6 +287,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/dainty-gold-necklace-desktop.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/dainty-gold-necklace-desktop.jpg" srcset="img/dainty-gold-necklace-desktop@2x.jpg 2x" width="270" height="284" alt=">Gold chain">
@@ -289,6 +298,7 @@
           </a>
           <a href="product.html" class="shop__slide swiper-slide">
             <div class="shop__img">
+              <!-- 1x:270 2x:540 -->
               <picture>
                 <source srcset="img/galaxy-earrings-desktop.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x" type="image/webp">
                 <img src="img/galaxy-earrings-desktop.jpg" srcset="img/galaxy-earrings-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
@@ -299,8 +309,8 @@
           </a>
         </div>
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <button type="button" class="swiper-button-prev" aria-label="Prev slide"></button>
+        <button type="button" class="swiper-button-next" aria-label="Next slide"></button>
       </div>
     </section>
   </main>
@@ -313,12 +323,13 @@
           <label>
             <input type="email" name="email-footer" id="email-footer" placeholder="Your E-mail">
           </label>
-          <a href="#">
+          <label class="footer__signup">
             Sign Up
             <svg class="footer__svg-arrow" width="30" height="11" viewBox="0 0 30 11">
               <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
-          </a>
+            <input type="submit" class="visually-hidden">
+          </label>
         </div>
       </form>
       <ul class="footer__list">
@@ -366,6 +377,7 @@
     <h2 class="add__head">The item was added to your cart</h2>
     <div class="add__product">
       <div class="add__img">
+        <!-- 1x:470 2x:940 -->
         <picture>
           <source srcset="img/product/necklace-detail-desktop.webp 1x, img/product/necklace-detail-desktop@2x.webp 2x" type="image/webp">
           <img src="img/product/necklace-detail-desktop.jpg" srcset="img/product/necklace-detail-desktop@2x.jpg 2x" width="470" height="435" alt="necklace-detail">
@@ -378,7 +390,7 @@
       <div class="add__quantity">
         <button type="button" aria-label="Increase the number of products by 1"></button>
         <p>1</p>
-        <button aria-label="Reduce the number of products by 1"></button>
+        <button type="button" aria-label="Reduce the number of products by 1"></button>
       </div>
     </div>
     <div class="add__result">
@@ -389,23 +401,23 @@
       <a class="add__continue" href="catalog.html">Continue shopping</a>
       <a href="#">Checkout</a>
     </div>
-    <button class="add__close-btn" aria-label="Close"></button>
+    <button class="add__close-btn" type="button" aria-label="Close"></button>
   </section>
   <form class="login" action="#">
     <h2>Log In</h2>
     <label class="login__input">
-        <input type="email" name="email" id="email" placeholder="Your E-mail">
+      <input type="email" name="email" id="email" placeholder="Your E-mail">
     </label>
     <label class="login__input">
       <input type="password" name="pass" id="pass" placeholder="Password">
     </label>
     <a class="login__forgot" href="#">Forgot your password?</a>
-    <button class="login__btn">Log In</button>
+    <button class="login__btn" type="submit">Log In</button>
     <div class="login__signup">
       <p>Don’t have an account?</p>
       <a href="#">Sign up</a>
     </div>
-    <button class="login__close" aria-label="Close"></button>
+    <button class="login__close" type="button" aria-label="Close"></button>
   </form>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

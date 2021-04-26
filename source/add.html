@@ -15,11 +15,12 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <div class="overlay overlay-active" tabindex="1"></div>
+  <div class="overlay overlay--active" tabindex="1"></div>
   <section class="add add-active">
     <h2 class="add__head">The item was added to your cart</h2>
     <div class="add__product">
       <div class="add__img">
+        <!-- 1x:470 2x:940 -->
         <picture>
           <source srcset="img/product/necklace-detail-desktop.webp 1x, img/product/necklace-detail-desktop@2x.webp 2x" type="image/webp">
           <img src="img/product/necklace-detail-desktop.jpg" srcset="img/product/necklace-detail-desktop@2x.jpg 2x" width="470" height="435" alt="necklace-detail">
@@ -32,7 +33,7 @@
       <div class="add__quantity">
         <button type="button" aria-label="Increase the number of products by 1"></button>
         <p>1</p>
-        <button aria-label="Reduce the number of products by 1"></button>
+        <button type="button" aria-label="Reduce the number of products by 1"></button>
       </div>
     </div>
     <div class="add__result">
@@ -40,10 +41,10 @@
       <p>Cart subtotal: $ 115</p>
     </div>
     <div class="add__btn">
-      <button class="add__continue" type="button">Continue shopping</button>
+      <a class="add__continue">Continue shopping</a>
       <a href="#">Checkout</a>
     </div>
-    <button class="add__close-btn" aria-label="Close"></button>
+    <button class="add__close-btn" type="button" aria-label="Close"></button>
   </section>
 </body>
 </html>
