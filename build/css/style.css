@@ -76,7 +76,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  font-family: "Poppins", "Courier New", sans-serif; }
+  font-family: "Poppins", "Verdana", sans-serif; }
 
 .wrapper {
   max-width: 1366px;
@@ -1295,21 +1295,21 @@ template {
   padding: 0 50px; }
   .shop-product h2 {
     margin-bottom: 20px; }
-  .shop-product .shop__btn {
+  .shop-product .shop-product__btn {
     margin-bottom: 64px; }
   @media (max-width: 1023px) {
     .shop-product {
       margin-top: 24px;
       margin-bottom: 75px;
       padding: 0 50px; }
-      .shop-product .shop__btn {
+      .shop-product .shop-product__btn {
         margin-bottom: 54px; } }
   @media (max-width: 767px) {
     .shop-product {
       margin-top: 17px;
       margin-bottom: 69px;
       padding: 0 15px; }
-      .shop-product .shop__btn {
+      .shop-product .shop-product__btn {
         margin-bottom: 44px; } }
 
 .blog {
