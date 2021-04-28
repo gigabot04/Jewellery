@@ -274,7 +274,8 @@ if (document.querySelector(`.cart__toggle`)) {
   const listWrap = document.querySelectorAll(`.cart__item`);
 
   for (let i = 0; i < tabBtn.length; i++) {
-    tabBtn[i].addEventListener(`click`, () => {
+    tabBtn[i].addEventListener(`click`, (evt) => {
+      evt.preventDefault();
       for (let j = 0; j < tabBtn.length; j++) {
         tabBtn[j].classList.remove(`cart__btn-info--active`);
         listWrap[j].classList.remove(`cart__item--active`);
