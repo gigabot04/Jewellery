@@ -197,8 +197,13 @@
       padding-left: 40px;
       color: $white;
 
+      &:hover,
+      &:focus {
+        border-bottom: none;
+      }
+
       &::placeholder {
-        color: $white;
+        color: rgba($white, 0.7);
       }
     }
   }

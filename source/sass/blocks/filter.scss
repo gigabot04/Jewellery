@@ -178,6 +178,10 @@
     background-color: $brown;
   }
 
+  & input:focus + label {
+    outline: 1px solid $clear-black;
+  }
+
   @media (max-width: $tablet-width) {
     padding: 0 55px 19px;
     margin-top: -10px;
