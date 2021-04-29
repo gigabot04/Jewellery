@@ -516,7 +516,8 @@ template {
     border: none;
     width: 192px;
     padding: 0;
-    height: 35px; }
+    height: 35px;
+    border-radius: 0; }
     .header__search input:hover, .header__search input:focus {
       border-bottom: 1px solid #1d1613; }
     .header__search input::-webkit-input-placeholder {
@@ -816,9 +817,6 @@ template {
         display: block; }
       .main__close-filter--active {
         display: block; } }
-  @media (max-width: 1023px) {
-    .main__close-filter {
-      left: 255px; } }
   @media (max-width: 767px) {
     .main__close-filter {
       left: 248px;
@@ -934,7 +932,8 @@ template {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
-    color: #ffffff; }
+    color: #ffffff;
+    border-radius: 0; }
     .footer__input-email input[type="email"]::-webkit-input-placeholder {
       font-weight: 500;
       font-size: 14px;
@@ -982,7 +981,8 @@ template {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  margin-top: 3px; }
+  margin-top: 3px;
+  cursor: pointer; }
   .footer__signup:hover, .footer__signup:focus {
     color: #a87b62; }
   .footer__signup:active {
@@ -1019,7 +1019,7 @@ template {
 .footer__list-two {
   margin-left: -20px;
   margin-right: 16px; }
-  @media (max-width: 1023px) {
+  @media (max-width: 1200px) {
     .footer__list-two {
       margin-left: 0;
       margin-right: 0; } }
@@ -1332,7 +1332,8 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 84px; }
+  margin-top: 84px;
+  padding: 0 15px; }
   @media (max-width: 1023px) {
     .blog {
       margin-top: 37px; } }
@@ -1763,13 +1764,8 @@ template {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
-  .filter--no-js {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    top: 0; }
+          flex-direction: column;
+  overflow-y: auto; }
   @media (max-width: 1023px) {
     .filter {
       display: none;
@@ -1777,8 +1773,7 @@ template {
       -webkit-box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
               box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
       padding-right: 0;
-      min-width: 270px;
-      min-height: 841px;
+      min-width: 442px;
       position: fixed;
       overflow-y: scroll;
       top: 20px;
@@ -1788,6 +1783,15 @@ template {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; } }
+  @media (max-width: 767px) {
+    .filter {
+      min-width: 270px; } }
+  .filter--no-js {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 0; }
 
 .filter__item {
   border: 1px solid #a87b62;
@@ -1879,7 +1883,8 @@ template {
     padding: 0 25px;
     margin-bottom: 12px;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 0; }
     .filter__list label:hover, .filter__list label:focus {
       color: #a87b62; }
     .filter__list label:active {
@@ -1954,11 +1959,10 @@ template {
   @media (max-width: 1023px) {
     .filter__clear {
       margin: 0 40px;
-      margin-top: 40px;
       margin-bottom: 25px; } }
   @media (max-width: 767px) {
     .filter__clear {
-      margin: 20px 20px 0; } }
+      margin: 20px; } }
 
 .filter__range {
   min-height: 41px; }
@@ -1991,6 +1995,7 @@ template {
   height: 15px;
   background-color: #a87b62;
   border-radius: 50%;
+  padding: 0;
   border: none;
   top: -50%;
   -webkit-transform: translateY(-50%);
@@ -2796,7 +2801,8 @@ template {
   background-color: transparent;
   width: 100%;
   margin-top: 34px;
-  padding: 0 0 10px 0; }
+  padding: 0 0 10px 0;
+  border-radius: 0; }
   .login__input input:hover, .login__input input:focus {
     border-bottom: 1px solid #a87b62; }
   .login__input input::-webkit-input-placeholder {
@@ -2834,7 +2840,8 @@ template {
   font-size: 12px;
   line-height: 18px;
   color: #9b9997;
-  text-align: end;
+  margin-right: 0;
+  margin-left: auto;
   margin-top: 7px; }
   .login__forgot:hover, .login__forgot:focus {
     color: #1d1613; }

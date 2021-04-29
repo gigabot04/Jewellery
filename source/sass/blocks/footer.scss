@@ -86,6 +86,7 @@
     padding: 0;
     flex: 1 0 auto;
     color: $white;
+    border-radius: 0;
 
     &::placeholder {
       font-weight: 500;
@@ -120,6 +121,7 @@
   color: $white;
   flex: 0 0 auto;
   margin-top: 3px;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -178,7 +180,7 @@
   margin-left: -20px;
   margin-right: 16px;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-blog) {
     margin-left: 0;
     margin-right: 0;
   }

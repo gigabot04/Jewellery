@@ -22,10 +22,10 @@
       </button>
       <form class="header__search" action="#">
         <label>
-          <input type="search" name="search" placeholder="Type here to search">
+          <input type="search" name="search" placeholder="Type here to search" required="">
         </label>
       </form>
-      <a class="header__logo" href="">
+      <a class="header__logo">
         <svg class="header__logo-svg" width="66" height="66" viewBox="0 0 66 66">
           <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
@@ -345,7 +345,7 @@
         <p>News and updates from CH. No spam, we promise.</p>
         <div class="footer__input-email">
           <label>
-            <input type="email" name="email-footer" id="email-footer" placeholder="Your E-mail">
+            <input type="email" name="email-footer" id="email-footer" placeholder="Your E-mail" required="">
           </label>
           <button class="footer__signup" type="submit">
             Sign Up
@@ -399,10 +399,10 @@
   <form class="login" action="#">
     <h2>Log In</h2>
     <label class="login__input">
-      <input type="email" name="email" id="email" placeholder="Your E-mail">
+      <input type="email" name="email" id="email" placeholder="Your E-mail" required="">
     </label>
     <label class="login__input">
-      <input type="password" name="pass" id="pass" placeholder="Password">
+      <input type="password" name="pass" id="pass" placeholder="Password" required="">
     </label>
     <a class="login__forgot" href="#">Forgot your password?</a>
     <button class="login__btn" type="submit">Log In</button>

@@ -43,6 +43,7 @@ if (document.querySelector(`.add`)) {
 if (document.querySelector(`.filter`)) {
   const filterItems = document.querySelectorAll(`.filter__item`);
   for (const filterItem of filterItems) {
+    filterItem.classList.remove(`filter__item--active`);
     filterItem.addEventListener(`click`, (evt) => {
       if (evt.target.classList.contains(`filter__btn`)) {
         filterItem.classList.toggle(`filter__item--active`);
