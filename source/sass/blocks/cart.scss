@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   max-width: 1110px;
   margin-top: 70px;
-  padding: 0 20px;
+  padding: 0 12px;
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
@@ -33,6 +33,7 @@
   width: 600px;
   height: 435px;
   margin-top: 9px;
+  margin-right: 10px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -50,7 +51,8 @@
 }
 
 .cart__info {
-  width: 370px;
+  max-width: 370px;
+  width: 100%;
   min-height: 435px;
 
   @media (max-width: $tablet-width) {

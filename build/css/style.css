@@ -2179,7 +2179,7 @@ template {
       flex-wrap: wrap;
   max-width: 1110px;
   margin-top: 70px;
-  padding: 0 20px; }
+  padding: 0 12px; }
   @media (max-width: 1023px) {
     .cart__wrapper {
       max-width: 100%;
@@ -2201,6 +2201,7 @@ template {
   width: 600px;
   height: 435px;
   margin-top: 9px;
+  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2225,7 +2226,8 @@ template {
       height: 100%; } }
 
 .cart__info {
-  width: 370px;
+  max-width: 370px;
+  width: 100%;
   min-height: 435px; }
   @media (max-width: 1023px) {
     .cart__info {
