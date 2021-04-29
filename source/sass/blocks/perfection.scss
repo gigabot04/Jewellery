@@ -12,8 +12,16 @@
   align-items: center;
   flex-direction: column;
 
-  @media (max-resolution: 2dppx) {
+  @supports (background-image: url('../img/intro-desktop.webp')) {
+    background-image: url('../img/intro-desktop.webp');
+  }
+
+  @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-desktop@2x.jpg");
+
+    @supports (background-image: url('../img/intro-desktop@2x.webp')) {
+      background-image: url('../img/intro-desktop@2x.webp');
+    }
   }
 
   & h1 {

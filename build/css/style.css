@@ -1075,9 +1075,15 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (-webkit-max-device-pixel-ratio: 2), (max-resolution: 2dppx) {
+  @supports (background-image: url("../img/intro-desktop.webp")) {
     .perfection {
-      background-image: url("../img/intro-desktop@2x.jpg"); } }
+      background-image: url("../img/intro-desktop.webp"); } }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .perfection {
+      background-image: url("../img/intro-desktop@2x.jpg"); }
+      @supports (background-image: url("../img/intro-desktop@2x.webp")) {
+        .perfection {
+          background-image: url("../img/intro-desktop@2x.webp"); } } }
   .perfection h1 {
     font-family: "CormorantGaramond", "Arial", sans-serif;
     font-style: normal;
