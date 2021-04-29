@@ -515,6 +515,7 @@ template {
     margin-left: 27px;
     border: none;
     width: 192px;
+    padding: 0;
     height: 35px; }
     .header__search input:hover, .header__search input:focus {
       border-bottom: 1px solid #1d1613; }
